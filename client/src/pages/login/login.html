@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Log in</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="getting-started">
+
+    <form class="kc-form" #formData='ngForm'>
+
+        <ion-item>
+            <ion-label color="primary" stacked>Please enter your email...</ion-label>
+            <ion-input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email">{{email}}</ion-input>
+         </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Please enter your password...</ion-label>
+            <ion-input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" type="password" placeholder="Password">{{password}}</ion-input>
+        </ion-item>
+        <button ion-button class="button-login" (click)="login()">Log in</button>
+
+    </form>
+
+    <div>
+        <span class="lower-text">Not yet registered?</span>
+        <button ion-button (click)="openModal()">Register</button>
+    </div>
+</ion-content>

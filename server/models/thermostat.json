@@ -1,0 +1,41 @@
+{
+  "name": "Thermostat",
+  "plural": "Thermostats",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "guid"
+    },
+    "avgTemperature": {
+      "type": "number"
+    },
+    "currentTemperature": {
+      "type": "number"
+    },
+    "humidity": {
+      "type": "number"
+    },
+    "status": {
+      "type": "object"
+    },
+    "name": {
+      "type": "string"
+    },
+    "lastUpdate": {
+      "type": "date"
+    },
+    "userId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

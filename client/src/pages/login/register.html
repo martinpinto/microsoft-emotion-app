@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Register a new user
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+        Close
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-item>
+      <ion-label color="primary" stacked>Please enter your email...</ion-label>
+      <ion-input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email">{{email}}</ion-input>
+    </ion-item>  
+    <ion-item>
+        <ion-label color="primary" stacked>Please enter your password...</ion-label>
+        <ion-input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" type="password" placeholder="Password">{{password}}</ion-input>
+    </ion-item>
+    <button ion-button (click)="createNewUser()">Register</button>
+</ion-content>

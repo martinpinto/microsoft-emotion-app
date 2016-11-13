@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/server/models",
+      "./models",
+      "./node_modules/loopback-component-passport/lib/models"
+    ],
+    "mixins": [
+      "loopback/server/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mysql",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": false
+    }
+  },
+  "UserCredential": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mysql",
+    "public": false
+  }
+}
