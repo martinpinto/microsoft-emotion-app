@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { UserService } from '../../providers/UserService';
+import { AuthService } from '../../providers/AuthService';
 import { UserIonic } from '../../models/User';
 import { Storage } from '@ionic/storage';
 
@@ -10,7 +10,7 @@ import { Register } from './register';
 @Component({
     selector: "login",
     templateUrl: 'login.html',
-    providers: [UserService]
+    providers: [AuthService]
 })
 export class EmailLoginForm {
     
@@ -18,7 +18,7 @@ export class EmailLoginForm {
     password: string;    
 
     constructor(
-        private userService: UserService, 
+        private userService: AuthService, 
         private storage: Storage,
         public modalCtrl: ModalController,
         public navCtrl: NavController,

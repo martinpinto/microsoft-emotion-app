@@ -11,3 +11,4 @@ plugins/
 Thumbs.db
 .editorconfig
 .tmp
+npm-debug.log

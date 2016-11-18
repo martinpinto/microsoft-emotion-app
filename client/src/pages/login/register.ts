@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController, Platform, ViewController, NavController } from 'ionic-angular';
-import { UserService } from '../../providers/UserService';
+import { AuthService } from '../../providers/AuthService';
 
 @Component({
   selector: 'register',
@@ -15,7 +15,7 @@ export class Register {
     public platform: Platform,
     public viewCtrl: ViewController,
     public navCtrl: NavController,
-    private userService: UserService
+    private userService: AuthService
   ) {
     
   }
@@ -26,12 +26,6 @@ export class Register {
 
   public createNewUser() {
     this.userService.createNewUser(this.email, this.password).subscribe((res) => {
-      /*
-      this.navCtrl.push(Control, { 
-        message: 'User created successful!', 
-        thermostats: res
-      });
-      */
     });
   }
 }

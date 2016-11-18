@@ -9,10 +9,12 @@ import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { EmailLoginForm } from '../pages/login/login';
 import { Register } from '../pages/login/register';
+import { PhotoPage } from '../pages/photo/photo';
 
 // Services
 import { Storage } from '@ionic/storage';
-import { UserService } from '../providers/UserService'; 
+import { AuthService } from '../providers/AuthService'; 
+import { EmotionService } from '../providers/EmotionService'; 
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { UserService } from '../providers/UserService';
     ContactPage,
     TabsPage,
     EmailLoginForm,
-    Register
+    Register,
+    PhotoPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -33,8 +36,9 @@ import { UserService } from '../providers/UserService';
     ContactPage,
     TabsPage,
     EmailLoginForm,
-    Register
+    Register,
+    PhotoPage
   ],
-  providers: [UserService, Storage]
+  providers: [AuthService, EmotionService, Storage]
 })
 export class AppModule {}

@@ -14,7 +14,7 @@ import { Injectable } from '@angular/core';
 'use strict';
 
 @Injectable()
-export class UserService {
+export class AuthService {
     config: any = Config.api;
 
     basePath: string = this.config.protocol + this.config.host + ':' + this.config.port + this.config.root || 'https://localhost/api';
