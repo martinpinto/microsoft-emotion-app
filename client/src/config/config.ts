@@ -9,6 +9,6 @@ export const Config = {
     },
     emotion: {
         host: "https://api.projectoxford.ai/emotion/v1.0/recognize",
-        token: "5208331e269c407fb64f7bac7188c6ea"
+        token: ""
     }
 }
