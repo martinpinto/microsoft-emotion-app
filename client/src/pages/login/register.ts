@@ -6,7 +6,7 @@ import { AuthService } from '../../providers/AuthService';
   selector: 'register',
   templateUrl: "register.html"
 })
-export class Register {
+export class RegisterPage {
 
   email: string;
   password: string; 

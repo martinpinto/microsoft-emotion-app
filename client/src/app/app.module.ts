@@ -8,8 +8,9 @@ import { MyApp } from './app.component';
 import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { EmailLoginForm } from '../pages/login/login';
-import { Register } from '../pages/login/register';
+import { RegisterPage } from '../pages/login/register';
 import { PhotoPage } from '../pages/photo/photo';
+import { EmotionPage } from '../pages/emotion/emotion';
 
 // Services
 import { Storage } from '@ionic/storage';
@@ -23,8 +24,9 @@ import { EmotionService } from '../providers/EmotionService';
     ContactPage,
     TabsPage,
     EmailLoginForm,
-    Register,
-    PhotoPage
+    RegisterPage,
+    PhotoPage,
+    EmotionPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -36,8 +38,9 @@ import { EmotionService } from '../providers/EmotionService';
     ContactPage,
     TabsPage,
     EmailLoginForm,
-    Register,
-    PhotoPage
+    RegisterPage,
+    PhotoPage,
+    EmotionPage
   ],
   providers: [AuthService, EmotionService, Storage]
 })

@@ -5,7 +5,7 @@ import { UserIonic } from '../../models/User';
 import { Storage } from '@ionic/storage';
 
 import { ModalController, NavController, ToastController } from 'ionic-angular';
-import { Register } from './register';
+import { RegisterPage } from './register';
 
 @Component({
     selector: "login",
@@ -26,7 +26,7 @@ export class EmailLoginForm {
         ) {}
     
     public openModal() {
-        let modal = this.modalCtrl.create(Register);
+        let modal = this.modalCtrl.create(RegisterPage);
         modal.present();
     }
 

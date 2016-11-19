@@ -12,3 +12,5 @@ Thumbs.db
 .editorconfig
 .tmp
 npm-debug.log
+
+client/src/config/config.ts

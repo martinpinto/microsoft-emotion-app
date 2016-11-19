@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import {Camera} from 'ionic-native';
+import { Camera } from 'ionic-native';
 
 import { NavController } from 'ionic-angular';
 import { EmotionService } from '../../providers/EmotionService';
+
+import { EmotionPage } from '../emotion/emotion';
 
 @Component({
   selector: 'photo',
@@ -36,6 +38,9 @@ export class PhotoPage {
   uploadPicture() {
     this.emotionService.post(this.base64Image).subscribe((res) => {
       console.log(res);
+      this.navCtrl.push(EmotionPage, { 
+          emotion: res
+      });
     });
   }
 
