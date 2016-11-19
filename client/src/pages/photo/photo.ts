@@ -17,6 +17,7 @@ export class PhotoPage {
   }
   
   /*
+   * Sample from:
    * http://blog.ionic.io/10-minutes-with-ionic-2-using-the-camera-with-ionic-native/
    */ 
   takePicture(){

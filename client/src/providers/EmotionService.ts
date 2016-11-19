@@ -27,8 +27,7 @@ export class EmotionService {
     }
 
     /**
-     * User Profile
-     * The User Profile endpoint returns information about the  user that has authorized with the application.
+     * Emotion Get
      */
     public get (extraHttpRequestParams?: any) { // : Observable<models.User> {
         const path = this.apiPath;
@@ -49,8 +48,7 @@ export class EmotionService {
     }
 
     /**
-     * User Profile
-     * The User Profile inserts a new user to the application.
+     * Emotion Post
      */
     public post (emotions?) { //: Observable<models.User> {
         const path = this.apiPath;
