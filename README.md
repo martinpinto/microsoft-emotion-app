@@ -22,3 +22,6 @@ https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89/operations/5
 1) cd server && npm start
 
 2) cd client && npm start
+
+
+Microsoft © and the Microsoft © logo are registered trademarks and copyright of the Microsoft Corporation.
