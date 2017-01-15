@@ -1,7 +1,5 @@
 # Microsoft Emotion App Showcase
 
-![Microsoft](https://www.microsoft.com/cognitive-services/Themes/ProjectOxford/Content/Images/microsoftLogo.png)
-
 This is an ionic / angular 2 app for showcasing the power of the microsoft emotion api:
 https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89/operations/563b31ea778daf121cc3a5fa
 
@@ -25,3 +23,4 @@ https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89/operations/5
 
 
 Microsoft © and the Microsoft © logo are registered trademarks and copyright of the Microsoft Corporation.
+Microsoft is a trademark of the Microsoft group of companies.
